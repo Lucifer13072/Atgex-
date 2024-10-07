@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1b1b1b;
+    color: #f5f5f5;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, rgba(29, 29, 29, 1) 0%, rgba(21, 21, 21, 1) 100%);
+    border-bottom: 2px solid #333;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: #00e5ff;
+    /* Убрано свечение */
+}
+
+.logo span {
+    color: #f5f5f5;
+}
+
+.nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff; /* Можно оставить для эффекта при наведении */
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('background.jpg') no-repeat center center/cover;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    animation: gradientShift 30s ease infinite; /* Анимация фона с градиентом */
+}
+
+.hero-content {
+    animation: fadeIn 2s ease-in-out;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: #00e5ff;
+    margin-bottom: 20px;
+    /* Убрано свечение */
+    background: linear-gradient(90deg, rgba(0,229,255,1) 0%, rgba(10, 255, 170, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 24px;
+    color: #f5f5f5;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background: linear-gradient(90deg, rgba(0,229,255,1) 0%, rgba(10, 255, 170, 1) 100%);
+    color: #121212;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background: linear-gradient(90deg, rgba(10, 255, 170, 1) 0%, rgba(0,229,255,1) 100%);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.7);
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f5f5f5;
+    font-size: 16px;
+    text-align: center;
+    animation: bounce 2s infinite;
+    z-index: 1;
+}
+
+.scroll-indicator i {
+    display: block;
+    margin-top: 5px;
+}
+
+.games-section, .about-section, .contact-section {
+    padding: 100px 50px;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 1) 0%, rgba(0,0,0,0.9) 100%);
+}
+
+.games-section h2, .about-section h2, .contact-section h2 {
+    font-size: 36px;
+    color: #00e5ff;
+    text-align: center;
+    margin-bottom: 40px;
+    /* Убрано свечение */
+}
+
+.game-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game-item {
+    background-color: #2a2a2a;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00e5ff;
+}
+
+.game-image {
+    position: relative;
+}
+
+.game-image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #00e5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.game-item:hover .overlay {
+    opacity: 1;
+}
+
+.game-item:hover img {
+    transform: scale(1.1);
+}
+
+.about-section .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    animation: slideIn 1.5s ease;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #f5f5f5;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+.contact-section button {
+    padding: 15px 30px;
+    background: linear-gradient(90deg, rgba(0,229,255,1) 0%, rgba(10, 255, 170, 1) 100%);
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-section button:hover {
+    background: linear-gradient(90deg, rgba(10, 255, 170, 1) 0%, rgba(0,229,255,1) 100%);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.7);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 1) 0%, rgba(0,0,0,0.9) 100%);
+    border-top: 2px solid #333;
+    color: #f5f5f5;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #00e5ff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00b8d4;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}

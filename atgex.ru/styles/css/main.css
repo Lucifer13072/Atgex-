@@ -1,0 +1,279 @@
+.container-fluid {
+    max-width: 90%; 
+}
+
+.navbar {
+    background-color: rgba(32, 32, 32, 0.753);
+}
+
+.navbar-brand {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.navbar-brand:hover{
+    color: rgb(163, 163, 163);
+    cursor:pointer;
+}
+
+.navbar-links {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 40px;
+}
+.navbar-links:hover {
+    color: rgb(163, 163, 163);
+    cursor:pointer;
+}
+
+.nav-button {
+    background: linear-gradient(90deg, rgba(3,81,207,1) 0%, rgba(6,71,213,1) 55%, rgba(3,77,207,1) 100%);
+	border-radius:50px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:10px 20px;
+	text-decoration:none;
+}
+
+.nav-button:hover{
+    background: linear-gradient(90deg, rgba(1,38,98,1) 0%, rgba(3,35,105,1) 55%, rgba(2,37,97,1) 100%);
+}
+
+
+.big-text {
+    margin-top: 50px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.line {
+    width: 100%;
+    border-top: 2px solid #6eacc5;
+}
+
+.medium-text {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.about {
+    margin-top: 100px;
+    margin-bottom: 100px;    
+}
+
+.main-tag {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.description {
+    color: rgb(170, 170, 170);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container {
+    display: flex; /* Используем Flexbox для горизонтального размещения колонок */
+    flex-wrap: wrap; /* Позволяет переносить элементы на следующую строку при необходимости */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 0 20px; /* Отступы по бокам от границ контейнера */
+}
+
+.footer {
+    background-color: rgb(59, 59, 59);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.photo-w {
+    width: 300px;
+    border-radius: 20px;
+    border: 5px;
+}
+
+#canvas-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* чтобы канвас был на заднем плане */
+}
+
+.col {
+    background-color: rgba(32, 32, 32, 0.664);
+}
+
+.footer-hight-text {
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+}
+
+.copyright {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(156, 153, 153);
+}
+
+.footer-links {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.button {
+    background: linear-gradient(90deg, rgba(3,81,207,1) 0%, rgba(6,71,213,1) 55%, rgba(3,77,207,1) 100%);
+	border-radius:50px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:10px 20px;
+	text-decoration:none;
+}
+
+.button:hover{
+    background: linear-gradient(90deg, rgba(1,38,98,1) 0%, rgba(3,35,105,1) 55%, rgba(2,37,97,1) 100%);
+}
+
+.image-ab {
+    border-radius: 20px;
+    width: 300px;
+}
+
+.image-ab:hover {
+    width: 320px;
+}
+
+.image-mid {
+    width: 500px;
+}
+
+.image-mid:hover {
+    width: 520px;
+}
+
+.download {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.photo {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 400px;
+}
+
+.news-item {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(53, 53, 53);
+    overflow: auto;
+    word-break: break-all;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.news-title {
+    margin-left: 10px;
+    margin-top: 15px;
+    color: white;
+    font-size: 30px;
+}
+
+.news-text {
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    word-wrap: break-word;
+}
+
+.news-image {
+    margin-left: 10px;
+    width: auto;
+    max-width: 100%;
+}
+
+.block {
+    max-width: 100%;
+    background-color: rgb(59, 59, 59);
+    border-radius: 10px 10px;
+    margin-bottom: 30px;
+}    
+
+
+.btn-grey {
+    background: linear-gradient(90deg, rgba(98,98,98,1) 0%, rgba(125,125,125,1) 100%);
+	border-radius:50px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:10px 20px;
+	text-decoration:none;
+}
+
+.btn-grey:hover{
+    background: linear-gradient(90deg, rgba(79,79,79,1) 0%, rgba(107,107,107,1) 100%);
+}
+
+#canvas-container {
+    position: relative;
+    width: 100%; /* Ширина контейнера занимает 100% от родительского элемента */
+    padding-top: 100%; /* Высота равна ширине (чтобы создать квадрат) */
+    /*border: 1px solid black; /* Оформление границы (для отладки) */
+    background-color: transparent; /* Прозрачный фон */
+    overflow: hidden; /* Скрыть содержимое, выходящее за пределы контейнера */
+    min-width: 400px; /* Минимальная ширина */
+    min-height: 400px; /* Минимальная высота (для создания квадратной формы) */
+    max-width: 600px; /* Максимальная ширина */
+    max-height: 600px; /* Максимальная высота */
+}
+
+#canvas-container canvas {
+    position: absolute; /* Абсолютное позиционирование для покрытия всего контейнера */
+    top: 0;
+    left: 0;
+    width: 100%; /* Растянуть на всю ширину контейнера */
+    height: 100%; /* Растянуть на всю высоту контейнера */
+}
+
+.coll {
+    flex: 1; /* Ширина колонки занимает равное пространство */
+    display: flex;
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+    align-items: center; /* Центрирование содержимого по вертикали */
+    margin: 10px;
+}
+
+@media (max-width: 767px) {
+    .big-text {
+        margin-top: 50px;
+    }
+    #canvas-container {
+        min-width: 300px; /* Минимальная ширина */
+        min-height: 300px; /* Минимальная высота (для создания квадратной формы) */
+        max-width: 400px; /* Максимальная ширина */
+        max-height: 400px; /* Максимальная высота */
+    }
+}
